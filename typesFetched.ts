@@ -43,7 +43,7 @@ export const fetchedLevelDataSchema = fetchedLevelBaseSchema.extend({
   playerPositionY: z.number(),
   characters: z.array(
     positionableSchema.extend({
-      characterTypeSchema,
+      type: characterTypeSchema,
     })
   ),
   pickups: z.array(
