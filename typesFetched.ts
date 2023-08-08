@@ -66,6 +66,21 @@ export const fetchedLevelResultSchema = fetchedLevelBaseSchema.extend({
   totalCompletions: z.number(),
 });
 
+export const ratingSchema = z.object({
+  id: z.number(),
+  userId: z.number(),
+  levelId: z.number(),
+  value: z.number(),
+});
+
+export const levelCompletionSchema = z.object({
+  id: z.number(),
+  userId: z.number(),
+  levelId: z.number(),
+  dateCompleted: dateParseableString,
+  gameDuration: z.number(),
+});
+
 export type FetchedLevelResult = z.infer<typeof fetchedLevelResultSchema>;
 
 export type FetchedLevelData = z.infer<typeof fetchedLevelDataSchema>;
