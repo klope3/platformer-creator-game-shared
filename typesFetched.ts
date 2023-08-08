@@ -60,11 +60,8 @@ export const fetchedLevelDataSchema = fetchedLevelBaseSchema.extend({
 
 //the schema for level data that's fetched as part of a search.
 //does not include data for building the level (characters, tiles, etc.)
-export const fetchedLevelResultSchema = fetchedLevelBaseSchema.extend({
-  averageRating: z.number(),
-  totalRatings: z.number(),
-  totalCompletions: z.number(),
-});
+//currently has no unique properties, but may in the future.
+export const fetchedLevelResultSchema = fetchedLevelBaseSchema;
 
 export const ratingSchema = z.object({
   id: z.number(),
