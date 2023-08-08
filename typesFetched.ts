@@ -33,6 +33,9 @@ const fetchedLevelBaseSchema = z.object({
   user: z.object({
     username: z.string(),
   }),
+  averageRating: z.number(),
+  totalRatings: z.number(),
+  totalCompletions: z.number(),
 });
 
 //the schema for level data used to build levels in the game.
