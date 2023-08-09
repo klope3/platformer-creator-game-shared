@@ -90,3 +90,5 @@ export type FetchedLevelResult = z.infer<typeof fetchedLevelResultSchema>;
 export type FetchedLevelData = z.infer<typeof fetchedLevelDataSchema>;
 
 export type User = z.infer<typeof userSchema>;
+
+export type LevelCompletion = z.infer<typeof levelCompletionSchema>;
