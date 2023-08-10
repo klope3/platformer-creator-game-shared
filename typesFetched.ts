@@ -83,6 +83,8 @@ export const levelCompletionSchema = z.object({
     id: z.number(),
     username: z.string(),
   }),
+  lives: z.number(),
+  score: z.number(),
 });
 
 export type FetchedLevelResult = z.infer<typeof fetchedLevelResultSchema>;
